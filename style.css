@@ -25,18 +25,19 @@ body{
     color:#fff;
     display: block;
 }
-a{
+li{
     text-decoration: none;
 }
-a:visited {
-    color: #fff;
+li:visited {
+    color: grey;
 }
-a:hover {
+li:hover {
     color: bisque;
   }
 .menu-item{
     display: inline-block;
     margin-right: 15px;
+    color:#fff;
     font-family: "Lexend Peta",sans-serif;
     font-weight: 400;
     font-style: 20px;
@@ -222,7 +223,7 @@ a:hover {
     }
     
 }
-@media (max-width:720px){
+@media (max-width:691px){
     #header{
         padding-top: 40px;
      }
@@ -247,15 +248,20 @@ a:hover {
         margin-bottom: 36px;
     }
     #landing2{
-        min-height: 90vh;
-        height: auto;
-    }
-    #desc-txt{
+        height: 100vh;
         width: 100%;
     }
+    #desc-txt{
+        width: 80%;
+        margin-left: 20px;
+    }
     #desc2{
-        width:85%;
-        margin: 20px 0px
+        width: 40%;  
+    }
+    #desc-img{
+        width: 130%;
+        margin-left: 80px;
+        margin-top: 20px;
     }
     #desc3{
         width: 100%;
@@ -286,7 +292,7 @@ a:hover {
     
     #landing4{
         width: 100%;
-        height: 90vh;
+        height: 70vh;
         padding: 5px;
         box-sizing: border-box;
      }
@@ -299,5 +305,34 @@ a:hover {
     .follow-item{
         display: inline-block;
         margin-right: 30px;
+    }
+    #landing5{
+        height: 30vh;
+    }
+}
+
+@media (max-width:400px){
+    body{
+        margin:0;
+    }
+    #landing3{
+        height: 100vh;
+        padding-top: 50px;
+    } 
+    #desc-txt3{
+        margin:20px 0px;
+        padding:5px;
+        width: 100%;
+        font-size: large;
+    }
+    #desc-img1{
+        width: 70%;
+        position: absolute;
+        top:-250px;
+        margin-left: 30px;
+    }
+    #landing5{
+        widows: 100%;
+        height: 30vh;
     }
 }
